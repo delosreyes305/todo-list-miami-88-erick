@@ -26,7 +26,7 @@ const Home = () => {
   return (
 
 
-    <div className="text-center">
+    <div className="text-center m-3">
       <h1>Todo List</h1>
        <input
             className="form-control w-50 mx-auto"

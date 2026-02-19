@@ -19,15 +19,16 @@ export const Todo = ({ index, todos, todoValue, setTodos }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="col-11">
+        <div className="col-1"><i class="fa-solid fa-thumbtack"></i></div>
+        <div className="col-10">
           <h2>{todoValue}</h2>
          
         </div>
         <div className="col-1">
           {isHovered ? (
-            <span className="text-danger border rounded-5" onClick={() => deleteTodos()}>
+            <span className="text-danger" onClick={() => deleteTodos()}>
               {" "}
-              X
+              <i className="fa-solid me-5 fa-circle-xmark fa-2lg" style={{color: "rgb(212, 36, 36)"}}></i>
             </span>
           ) : null}
         </div>
